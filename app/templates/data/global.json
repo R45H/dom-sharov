@@ -1,0 +1,17 @@
+{
+	"global": [
+		{
+			"name": "Дом шаров",
+			"link_home": "/"
+		},
+		{
+			"addresses": [
+				{
+					"tel": "+7 (499) 647-46-58",
+					"tel_link": "+74996474658",
+					"email": "sales@dom-sharov.ru"
+				}
+			]
+		}
+	]
+}
