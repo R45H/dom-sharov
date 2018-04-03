@@ -6,4 +6,15 @@ $name: main;
 	&__space-col {
 		margin-bottom: 30px;
 	}
+
+	&__offer-wrap {
+
+		@include screen-md(max) {
+			margin-bottom: 30px;
+		}
+
+		@include screen-sm(max) {
+			margin-bottom: 15px;
+		}
+	}
 }

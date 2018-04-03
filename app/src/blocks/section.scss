@@ -88,6 +88,14 @@ $name: section;
 		padding: 6rem 0;
 	}
 
+	&_pad-top_2x {
+		padding-top: 6rem;
+	}
+
+	&_pad-bot_2x {
+		padding-bottom: 6rem;
+	}
+
 	&_mobile_space-bot {
 
 		@include screen-sm(max) {

@@ -1,4 +1,14 @@
-.section.section_pad_2x
+include ../mixins/offer
+
+.section.section_desktop_gray.section_border.section_pad_2x
+	.container
+		.row
+
+			each val in offer
+				.col-md-6.col-lg-4.main__offer-wrap(class= val.is_mobile_hidden ? 'hidden-md' : '')
+					+offer(val)
+
+.section.section_pad-bot_2x
 	.container
 		h2.title.title_space_bot Наши партнёры и клиенты
 
