@@ -2,4 +2,62 @@ $name: footer;
 
 .#{$name} {
 	flex: 0 0 auto;
+	background: white;
+
+	@include screen-sm(max) {
+		text-align: center;
+	}
+
+	&__top {
+		border-top: 1px solid $color-light;
+		border-bottom: 1px solid $color-light;
+		padding: 2.5rem 0;
+	}
+
+	&__row {
+		margin-bottom: 15px;
+	}
+
+	&__menu {
+
+		@include screen-sm(max) {
+			border-top: 1px solid $color-light;
+		}
+	}
+
+	&__link-wrap {
+		margin-bottom: 10px;
+	}
+
+	&__bot {
+		padding: 15px 0;
+	}
+
+	&__bot-i {
+
+		@include screen-sm() {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&__pay {
+
+		@include screen-sm(max) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__copyright {
+		font-size: 12px;
+		color: $color-gray;
+		flex: none;
+		text-align: center;
+
+		@include screen-sm() {
+			margin-right: 15px;
+		}
+	}
 }

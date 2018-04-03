@@ -1,2 +1,59 @@
+include ../mixins/svg
+
 // FOOTER
 footer.footer
+
+	.footer__top
+		.container
+			.row
+				.col-sm-4.col-lg-3
+					.footer__row
+						include ../components/logo
+
+					.footer__row
+						.footer__link-wrap
+							a.link-icon(href='tel:' + global[0].tel_link)
+								+svg('tel', 'link-icon__icon')
+								span.link-icon__text= global[0].tel
+
+						.footer__link-wrap
+							a.link-icon(href='email:' + global[0].email)
+								+svg('mail', 'link-icon__icon')
+								span.link-icon__text= global[0].email
+
+					.footer__row
+						.social
+							.social__wrap
+								a.social__link(href='#' target='_blank' rel='nofollow')
+									+svg('social-whatsapp', 'social__icon')
+								a.social__link(href='#' target='_blank' rel='nofollow')
+									+svg('social-telegram', 'social__icon')
+
+				.col-sm-8.col-lg-9
+					.row
+						.f-menu.footer__menu
+
+							each val in f_menu
+								ul.f-menu__col
+
+									each item in val.col
+										li.f-menu__item(class= item.title == '&nbsp;' ? 'f-menu__item_mobile-hidden' : '')
+											.f-menu__i
+
+												if item.name
+													a(href= item.link).f-menu__link= item.name
+												else
+													.f-menu__title
+														a(href= item.link).subtitle!= item.title
+
+.footer__bot
+		.footer__bot-i.container
+
+			.footer__item
+
+				.pay.footer__pay
+
+					each val in pay
+						.pay__item(style='background-image: url(' + val + ');')
+
+			.footer__item.footer__copyright Copyright 2018. All Rights Reserved.

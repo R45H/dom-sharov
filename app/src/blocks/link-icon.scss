@@ -9,10 +9,12 @@ $name: link-icon;
 
 			&__text {
 				color: $color-link;
+				transition: none;
 			}
 
 			&__icon {
 				fill: $color-link;
+				transition: none;
 			}
 		}
 	}
@@ -20,7 +22,7 @@ $name: link-icon;
 	&__text {
 		display: inline-block;
 		vertical-align: middle;
-		transition: $duration / 2 ease;
+		transition: $duration / 2 linear;
 	}
 
 	&__icon {
@@ -28,7 +30,7 @@ $name: link-icon;
 		height: 20px;
 		margin-right: .5rem;
 		vertical-align: middle;
-		transition: $duration / 2 ease;
+		transition: $duration / 2 linear;
 	}
 
 	&_big {

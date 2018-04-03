@@ -15,10 +15,11 @@ $name: search;
 		width: 34px;
 		padding: 7px;
 		cursor: pointer;
-		transition: $duration ease;
+		transition: $duration / 2 linear;
 
 		&:hover {
 			fill: $color-link;
+			transition: none;
 		}
 	}
 }

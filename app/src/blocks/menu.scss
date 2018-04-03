@@ -28,7 +28,7 @@ $name: menu;
 
 	&__link {
 		color: $color-link;
-		transition: $duration ease;
+		transition: $duration / 2 linear;
 		display: block;
 		fill: $color-link;
 		text-align: center;
@@ -41,6 +41,7 @@ $name: menu;
 		&:hover {
 			color: $color-link-hover;
 			fill: $color-link-hover;
+			transition: none;
 		}
 	}
 

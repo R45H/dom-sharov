@@ -1,0 +1,61 @@
+$name: f-menu;
+
+.#{$name} {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	line-height: 1.8;
+
+	&__col {
+		padding: 0 15px;
+		width: 100%;
+
+		@include screen-sm() {
+			width: 50%;
+		}
+
+		@include screen-lg() {
+			width: auto;
+		}
+	}
+
+	&__item {
+		display: block;
+
+		&_mobile-hidden {
+
+			@include screen-sm(max) {
+				display: none;
+			}
+		}
+	}
+
+	&__i {
+		display: inline-block;
+	}
+
+	&__link {
+		color: $color-text-gray;
+		display: block;
+		transition: $duration / 2 linear;
+
+		&:hover {
+			color: $color-link;
+			transition: none;
+		}
+	}
+
+	&__title {
+		display: block;
+		margin: 3rem 0 1rem;
+
+		@include screen-md() {
+			margin: 1rem 0;
+		}
+
+		&:hover {
+			color: $color-link;
+		}
+	}
+}
