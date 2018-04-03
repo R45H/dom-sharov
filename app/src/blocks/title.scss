@@ -1,0 +1,12 @@
+$name: title;
+
+.#{$name} {
+	margin: 0;
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+
+	&_space_bot {
+		margin: 0 0 1.5em;
+	}
+}

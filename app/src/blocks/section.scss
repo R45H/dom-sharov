@@ -66,7 +66,7 @@ $name: section;
 			margin-left: 15px;
 			margin-right: 15px;
 			border: 1px solid $color-light;
-			border-radius: 3px;
+			border-radius: 4px;
 		}
 	}
 
@@ -82,6 +82,10 @@ $name: section;
 		@include screen-sm(max) {
 			background: white;
 		}
+	}
+
+	&_pad_2x {
+		padding: 6rem 0;
 	}
 
 	&_mobile_space-bot {

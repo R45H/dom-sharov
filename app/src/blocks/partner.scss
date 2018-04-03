@@ -1,0 +1,25 @@
+$name: partner;
+
+.#{$name} {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 -15px -30px;
+	overflow: hidden;
+
+	&__item {
+		width: 15rem;
+		height: 7.5rem;
+		background: no-repeat center / contain;
+		filter: grayscale(100%);
+		opacity: .4;
+		transition: $duration / 2 linear;
+		margin: 0 15px 30px;
+
+		&:hover {
+			filter: none;
+			opacity: 1;
+		}
+	}
+}
