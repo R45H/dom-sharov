@@ -5,4 +5,8 @@ $name: subtitle;
 	margin: 0;
 	font-weight: bold;
 	display: block;
+
+	&_space {
+		margin: 1.5em 0 1em;
+	}
 }

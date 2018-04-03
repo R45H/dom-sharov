@@ -1,0 +1,16 @@
+$name: text;
+
+.#{$name} {
+
+	p {
+		color: $color-text-gray;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

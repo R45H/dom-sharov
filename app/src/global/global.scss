@@ -28,6 +28,10 @@ body {
 	display: flex;
 	flex-direction: column;
 
+	@include screen-sm(max) {
+		background-color: $color-lighter;
+	}
+
 	&.noscroll {
 		overflow: hidden;
 	}

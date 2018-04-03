@@ -49,6 +49,7 @@ $name: f-menu;
 	&__title {
 		display: block;
 		margin: 3rem 0 1rem;
+		transition: $duration / 2 linear;
 
 		@include screen-md() {
 			margin: 1rem 0;
@@ -56,6 +57,7 @@ $name: f-menu;
 
 		&:hover {
 			color: $color-link;
+			transition: none;
 		}
 	}
 }

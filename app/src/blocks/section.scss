@@ -1,5 +1,93 @@
 $name: section;
 
 .#{$name} {
+	padding: 3rem 0;
 
+	&_border {
+		border-top: 1px solid $color-light;
+		border-bottom: 1px solid $color-light;
+	}
+
+	&_border-top {
+		border-top: 1px solid $color-light;
+	}
+
+	&_border-bot {
+		border-bottom: 1px solid $color-light;
+	}
+
+	&_desktop_border {
+
+		@include screen-sm() {
+			border-top: 1px solid $color-light;
+			border-bottom: 1px solid $color-light;
+		}
+	}
+
+	&_desktop_border-top {
+
+		@include screen-sm() {
+			border-top: 1px solid $color-light;
+		}
+	}
+
+	&_desktop_border-bot {
+
+		@include screen-sm() {
+			border-bottom: 1px solid $color-light;
+		}
+	}
+
+	&_mobile_border {
+
+		@include screen-sm(max) {
+			border-top: 1px solid $color-light;
+			border-bottom: 1px solid $color-light;
+		}
+	}
+
+	&_mobile_border-top {
+
+		@include screen-sm(max) {
+			border-top: 1px solid $color-light;
+		}
+	}
+
+	&_mobile_border-bot {
+
+		@include screen-sm(max) {
+			border-bottom: 1px solid $color-light;
+		}
+	}
+
+	&_mobile_shrink {
+
+		@include screen-sm(max) {
+			margin-left: 15px;
+			margin-right: 15px;
+			border: 1px solid $color-light;
+			border-radius: 3px;
+		}
+	}
+
+	&_desktop_gray {
+
+		@include screen-sm() {
+			background: $color-lighter;
+		}
+	}
+
+	&_mobile_white {
+
+		@include screen-sm(max) {
+			background: white;
+		}
+	}
+
+	&_mobile_space-bot {
+
+		@include screen-sm(max) {
+			margin-bottom: 30px;
+		}
+	}
 }
