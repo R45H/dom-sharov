@@ -1,8 +1,16 @@
 html {
 	height: 100%;
-	font-size: 8px;
+	font-size: 6px;
+
+	@include screen-sm() {
+		font-size: 7px;
+	}
 
 	@include screen-md() {
+		font-size: 8px;
+	}
+
+	@include screen-lg() {
 		font-size: 9px;
 	}
 
@@ -13,7 +21,7 @@ html {
 
 body {
 	height: 100%;
-	font-size: 1.3rem;
+	font-size: 13px;
 	font-family: $font-main;
 	color: $color-text;
 	line-height: 1.4;
@@ -87,7 +95,7 @@ img {
 }
 
 ::selection {
-	background: $color-warning;
+	background: $color-link;
 	color: white;
 }
 

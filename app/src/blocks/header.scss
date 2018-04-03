@@ -2,4 +2,41 @@ $name: header;
 
 .#{$name} {
 	flex: 0 0 auto;
+
+	&__top {
+		padding: 2.5rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__bag-text {
+		padding-top: 5px;
+
+		@include screen-sm(max) {
+			display: none;
+		}
+	}
+
+	&__bot {
+		padding: 15px 0;
+
+		@include screen-sm() {
+			border-top: 1px solid $color-light;
+			border-bottom: 1px solid $color-light;
+		}
+	}
+
+	&__bot-i {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__bot-item {
+
+		@include screen-sm(max) {
+			margin-bottom: 15px;
+		}
+	}
 }

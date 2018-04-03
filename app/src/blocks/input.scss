@@ -1,0 +1,46 @@
+$name: input;
+
+.#{$name} {
+	display: block;
+	width: 100%;
+	min-height: 100%;
+	line-height: 1.4em;
+	appearance: none;
+	border-radius: 3px;
+	border: none;
+	padding: 8px 16px;
+	background: $color-light;
+	font-family: $font-main;
+	font-weight: normal;
+	color: $color-text;
+	outline: none;
+
+	@include input-placeholder {
+		color: $color-gray;
+		transition: $duration ease;
+	}
+
+	@include input-autofill($color-text, $color-text, $color-light);
+
+	&:focus {
+
+		@include input-placeholder {
+			text-indent: 10px;
+		}
+	}
+
+	&textarea {
+		height: 4.5em;
+	}
+
+	&_invalid {
+		color: $color-danger;
+		background: lighten($color-danger, 26%);
+
+		@include input-placeholder {
+			color: $color-danger;
+		}
+
+		@include input-autofill($color-danger, $color-danger, lighten($color-danger, 26%));
+	}
+}

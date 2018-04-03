@@ -1,0 +1,45 @@
+$name: link-icon;
+
+.#{$name} {
+	display: inline-block;
+
+	&:hover {
+
+		.#{$name} {
+
+			&__text {
+				color: $color-link;
+			}
+
+			&__icon {
+				fill: $color-link;
+			}
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+		transition: $duration / 2 ease;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		margin-right: .5rem;
+		vertical-align: middle;
+		transition: $duration / 2 ease;
+	}
+
+	&_big {
+
+		.#{$name} {
+			// =====
+
+			&__icon {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

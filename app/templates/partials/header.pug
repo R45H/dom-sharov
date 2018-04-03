@@ -1,2 +1,41 @@
+include ../mixins/svg
+
 // HEADER
 header.header
+
+	.container
+		.header__top
+
+			.header__item.hidden-xs
+				a.link-icon.link-icon_big(href='tel:' + global[0].tel_link)
+					+svg('tel', 'link-icon__icon')
+					span.link-icon__text= global[0].tel
+
+			.header__item
+				a.logo(href= global[0].link_home)
+					img.logo__img(src='img/logo.png' srcset='img/logo@2x.png 2x' alt='')
+
+			.header__item
+				a.link-icon.link-icon_big(href='#')
+					+svg('bag', 'link-icon__icon')
+					span.link-icon__text.header__bag-text Корзина
+
+	.header__bot
+		.container
+			.row.header__bot-i
+
+				.header__bot-item.col-sm-8.col-lg-9
+					ul.menu
+						each val in menu
+							li.menu__item(class= val.icon ? 'menu__item_icon' : '')
+								a.menu__link(href= val.link)
+
+									if (val.icon)
+										+svg(val.icon, 'menu__icon')
+
+									span.menu__text= val.name
+
+				.header__bot-item.col-sm-4.col-lg-3
+					.search
+						input.input.search__input(type='text' placeholder='Поиск')
+						+svg('search', 'search__btn')
