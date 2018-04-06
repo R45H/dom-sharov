@@ -1,0 +1,25 @@
+.tile
+	.container
+		.tile__row
+			.tile__col
+				.tile__panel
+					.tile__panel-i.tile__panel-i_big
+						.tile__img(style='background-image: url(' + tile.big.img + ');')
+						h1.tile__title= tile.big.title
+						ul.tile__list
+
+							each val in tile.big.links
+								li.tile__list-item
+									a.tile__link(href= val.link)= val.name
+
+
+			.tile__col
+				.tile__row
+
+					each val in tile.sm
+
+						.tile__inner-col
+							.tile__panel
+								a.tile__panel-i(href= val.link)
+									.tile__img.tile__img_animation(style='background-image: url(' + val.img + ');')
+									span.tile__sm-title= val.title

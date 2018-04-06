@@ -1,0 +1,36 @@
+{
+	"tile": {
+		"big": {
+			"title": "Шары на День рождения",
+			"img": "img/content/tile/01.jpg",
+			"links": [
+				{"link": "#", "name": "Девочке"},
+				{"link": "#", "name": "Женщине"},
+				{"link": "#", "name": "Мальчику"},
+				{"link": "#", "name": "Мужчине"}
+			]
+		},
+		"sm": [
+			{
+				"link": "#",
+				"title": "Печать на шарах",
+				"img": "img/content/tile/02.jpg"
+			},
+			{
+				"link": "#",
+				"title": "Товары для праздника",
+				"img": "img/content/tile/03.jpg"
+			},
+			{
+				"link": "#",
+				"title": "Цветы",
+				"img": "img/content/tile/04.jpg"
+			},
+			{
+				"link": "#",
+				"title": "Торты",
+				"img": "img/content/tile/05.jpg"
+			}
+		]
+	}
+}
