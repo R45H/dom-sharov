@@ -76,15 +76,13 @@ a {
 	&:not([class]),
 	&[class=''] {
 		color: $color-link;
-		border-bottom: 1px solid lighten($color-link, 15%);
+		border-bottom: 1px solid lighten($color-link, 25%);
+		transition: $duration / 2 linear;
 
 		&:hover {
 			color: $color-link-hover;
-			border-bottom-color: lighten($color-link-hover, 15%);
-		}
-
-		&:active {
-			color: lighten($color-link-hover, 25%);
+			border-bottom-color: lighten($color-link-hover, 18%);
+			transition: none;
 		}
 	}
 }

@@ -1,0 +1,48 @@
+{
+	"card": [
+		{
+			"link": "#",
+			"img": "img/content/no-photo.jpg",
+			"title": "Букет из чёрных звёзд и ..",
+			"hash": ["золотой", "серебряный", "звезда"],
+			"price": "2249,99",
+			"state": {
+				"hit": true,
+				"recommend": true
+			}
+		},
+		{
+			"link": "#",
+			"img": "img/content/no-photo.jpg",
+			"title": "Букет из чёрных звёзд и ..",
+			"hash": ["золотой", "серебряный", "звезда"],
+			"price": "59",
+			"max_price": "1999",
+			"state": {
+				"recommend": true
+			}
+		},
+		{
+			"link": "#",
+			"img": "img/content/no-photo.jpg",
+			"title": "Букет из серебряных и розовых шариков с серебряными и ..",
+			"title_row": true,
+			"hash": ["золотой", "серебряный", "звезда"],
+			"price": "1249,99",
+			"state": {
+				"discount": "2249,99"
+			}
+		},
+		{
+			"link": "#",
+			"img": "img/content/no-photo.jpg",
+			"title": "Букет из серебряных и розовых шариков с серебряными и ..",
+			"hash": ["золотой", "серебряный", "звезда"],
+			"price": "1249,99",
+			"state": {
+				"discount": "2249,99",
+				"hit": true
+			}
+		}
+	]
+}

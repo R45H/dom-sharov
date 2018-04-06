@@ -1,0 +1,186 @@
+$name: card;
+
+.#{$name} {
+	border: 1px solid $color-light;
+	border-radius: 4px;
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__top {
+		display: block;
+		flex: none;
+		overflow: hidden;
+		position: relative;
+
+		&:hover {
+
+			.#{$name} {
+				// =====
+
+				&__img {
+					transform: scale(1.04) rotate(.5deg);
+				}
+			}
+		}
+	}
+
+	&__img-wrap {
+		display: block;
+	}
+
+	&__img {
+		display: block;
+		padding-bottom: 100%;
+		background: $color-lighter no-repeat center / contain;
+		transition: $duration linear;
+	}
+
+	&__state-wrap {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 1.5rem;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&__state {
+		font-size: 13px;
+		color: white;
+		padding: .5rem 1.5rem;
+		line-height: 1;
+		margin-bottom: 10px;
+		border-radius: 4px;
+		background: $color-gray;
+
+		&_hit {
+			background: $color-warning;
+		}
+
+		&_recommend {
+			background: $color-success;
+		}
+
+		&_discount {
+			background: $color-danger;
+		}
+	}
+
+	&__bot {
+		padding: 1rem 1.5rem 2.5rem;
+		flex: auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title-wrap {
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 -6px -1.5rem;
+		overflow: hidden;
+		padding: 1.5rem 0;
+	}
+
+	&__title {
+		display: block;
+		font-size: 13px;
+		font-weight: bold;
+		margin: 0 6px 1.5rem;
+		transition: $duration / 2 linear;
+	}
+
+	&__price-wrap {
+		margin: 0 6px 1.5rem;
+	}
+
+	&__old-price {
+		white-space: nowrap;
+		font-size: 10px;
+		color: lighten($color-gray, 20%);
+		text-decoration: line-through;
+		font-weight: bold;
+	}
+
+	&__price {
+		white-space: nowrap;
+		font-size: 14px;
+		font-weight: bold;
+
+		&_discount {
+			color: $color-danger;
+		}
+	}
+
+	&__max-price {
+		white-space: nowrap;
+		color: $color-gray;
+		font-size: 11px;
+	}
+
+	&__desc-wrap {
+
+	}
+
+	&__hash-wrap {
+		margin-bottom: 1.5rem;
+	}
+
+	&__hash {
+		display: inline-block;
+		font-size: 11px;
+		color: $color-gray;
+		margin-right: 1em;
+		transition: $duration / 2 linear;
+	}
+
+	&__btn-wrap {
+		text-align: center;
+	}
+
+	&__btn {
+
+	}
+
+	&_title_row {
+
+		.#{$name} {
+			// =====
+
+			&__title-wrap {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			&__old-price,
+			&__price,
+			&__max-price {
+				display: inline-block;
+				margin-right: 10px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+a.#{$name} {
+
+	&__title,
+	&__hash {
+
+		&:hover {
+			color: $color-link;
+			transition: none;
+		}
+	}
+}

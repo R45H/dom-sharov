@@ -1,0 +1,33 @@
+include ../mixins/card
+include ../mixins/svg
+
+mixin cat(data)
+	.cat
+
+		.cat__head
+			.title.cat__title= data.title
+			ul.cat__links
+
+				each val, i in data.links
+					li.cat__link-item
+						a.link.cat__link(href='#' class= !i ? 'cat__link_active' : '')
+							span.cat__link-img-wrap
+								span.cat__link-img(style='background-image: url(' + val.img + ');')
+							span.cat__link-text= val.text
+
+			.cat__all-link-wrap
+				a.link.link_icon_after.cat__all-link(href='#')
+					| Посмотреть весь каталог
+					+svg('arrow-right', 'link__icon')
+
+		.cat__body
+			.row
+
+				each val in card
+					.col-sm-6.col-md-4.col-xl-3.main__space-col
+						+card(val)
+
+			.text-center
+				a.btn.btn_fill.btn_icon_arrow.cat__more-btn(href='#')
+					| Смотреть ещё
+					+svg('arrow-right', 'btn__icon btn__icon_arrow')

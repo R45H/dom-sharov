@@ -1,4 +1,9 @@
 include ../mixins/offer
+include ../components/cat
+
+.section.section_mobile_white.section_mobile_shrink.section_mobile_space-bot
+	.container
+		+cat(cat)
 
 .section.section_desktop_gray.section_border.section_pad_2x
 	.container
@@ -7,6 +12,14 @@ include ../mixins/offer
 			each val in offer
 				.col-md-6.col-lg-4.main__offer-wrap(class= val.is_mobile_hidden ? 'hidden-md' : '')
 					+offer(val)
+
+.section.section_mobile_white.section_mobile_shrink.section_mobile_space-top.section_mobile_space-bot
+	.container
+		+cat(cat_2)
+
+.section.section_mobile_white.section_mobile_shrink.section_mobile_space-bot
+	.container
+		+cat(cat_3)
 
 .section.section_pad-bot_2x
 	.container

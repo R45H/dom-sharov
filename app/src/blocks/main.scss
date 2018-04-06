@@ -9,12 +9,15 @@ $name: main;
 
 	&__offer-wrap {
 
-		@include screen-md(max) {
-			margin-bottom: 30px;
-		}
+		&:first-child {
 
-		@include screen-sm(max) {
-			margin-bottom: 15px;
+			@include screen-md(max) {
+				margin-bottom: 30px;
+			}
+
+			@include screen-sm(max) {
+				margin-bottom: 15px;
+			}
 		}
 	}
 }

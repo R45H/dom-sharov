@@ -1,0 +1,23 @@
+{
+	"cat": {
+		"title": "Воздушные шары",
+		"links": [
+			{
+				"text": "На День Рождения",
+				"img": "img/content/cat/01.jpg"
+			},
+			{
+				"text": "С конфетти",
+				"img": "img/content/cat/02.jpg"
+			},
+			{
+				"text": "Светящиеся",
+				"img": "img/content/cat/03.jpg"
+			},
+			{
+				"text": "Девушке",
+				"img": "img/content/cat/04.jpg"
+			}
+		]
+	}
+}

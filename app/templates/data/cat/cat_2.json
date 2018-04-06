@@ -1,0 +1,19 @@
+{
+	"cat_2": {
+		"title": "Фольгированные воздушные шары",
+		"links": [
+			{
+				"text": "Ходячие фигуры",
+				"img": "img/content/cat/01.jpg"
+			},
+			{
+				"text": "Шары-цифры",
+				"img": "img/content/cat/02.jpg"
+			},
+			{
+				"text": "Букеты",
+				"img": "img/content/cat/03.jpg"
+			}
+		]
+	}
+}

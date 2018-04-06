@@ -1,0 +1,72 @@
+$name: btn;
+
+.#{$name} {
+	display: inline-block;
+	position: relative;
+	font-family: $font-main;
+	font-size: 15px;
+	font-weight: normal;
+	color: $color-text;
+	border: 1px solid;
+	border-radius: 4px;
+	background-color: transparent;
+	text-align: center;
+	cursor: pointer;
+	line-height: 1.2;
+	outline: none;
+	padding: 10px 40px;
+	transition: $duration / 2 linear;
+	word-break: break-word;
+
+	&:hover {
+		color: $color-link;
+		fill: $color-link;
+		transition: none;
+	}
+
+	&__icon {
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		top: 50%;
+		margin-top: -11px;
+		left: 40px;
+
+		&_right {
+			left: auto;
+			right: 40px;
+		}
+
+		&_arrow {
+			left: auto;
+			right: 40px;
+			width: 25px;
+			height: 20px;
+		}
+	}
+
+	&_icon_before {
+		padding-left: 70px;
+	}
+
+	&_icon_after {
+		padding-right: 70px;
+	}
+
+	&_icon_arrow {
+		padding-right: 75px;
+	}
+
+	&_fill {
+		border-color: transparent;
+		background: $color-light;
+
+		&:hover {
+			background: lighten($color-link, 31%);
+		}
+	}
+
+	&_wide {
+		width: 100%;
+	}
+}

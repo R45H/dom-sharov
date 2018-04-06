@@ -1,0 +1,23 @@
+{
+	"cat_3": {
+		"title": "Большие воздушные шары",
+		"links": [
+			{
+				"text": "С надписью",
+				"img": "img/content/cat/01.jpg"
+			},
+			{
+				"text": "Прозрачные",
+				"img": "img/content/cat/02.jpg"
+			},
+			{
+				"text": "Прозрачные с блёстками",
+				"img": "img/content/cat/03.jpg"
+			},
+			{
+				"text": "Светящиеся",
+				"img": "img/content/cat/04.jpg"
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+$name: link;
+
+.#{$name} {
+	@extend a:not([class]);
+	position: relative;
+
+	&__icon {
+		width: 30px;
+		height: 20px;
+		position: absolute;
+		left: 100%;
+		padding-left: 5px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&_icon_after {
+		margin-right: 30px;
+		fill: $color-link;
+
+		&:hover {
+			fill: $color-link-hover;
+		}
+	}
+}

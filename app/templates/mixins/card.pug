@@ -1,0 +1,48 @@
+include svg
+
+mixin card(data)
+	.card(class= data.title_row ? 'card_title_row' : '')
+
+		a.card__top(href= data.link)
+
+			.card__img-wrap
+				.card__img(style='background-image: url(' + data.img + ');')
+
+			.card__state-wrap
+
+				if data.state.hit
+					.card__state.card__state_hit Хит
+
+				if data.state.recommend
+					.card__state.card__state_recommend Рекомендуем
+
+				if data.state.discount
+					.card__state.card__state_discount Скидка
+
+		.card__bot
+			.card__title-wrap
+				a.card__title(href= data.link)= data.title
+
+				.card__price-wrap
+
+					if data.state.discount
+						.card__old-price= data.state.discount + ' руб.'
+						.card__price.card__price_discount= data.price + ' руб.'
+					else if data.max_price
+						.card__price= 'от ' + data.price + ' руб.'
+						.card__max-price= 'до ' + data.max_price + ' руб.'
+					else
+						.card__price= data.price + ' руб.'
+
+			.card__desc-wrap
+				.card__hash-wrap
+
+					each val in data.hash
+						a.card__hash(href='#')= '#' + val
+
+					span.card__hash ..
+
+				.card__btn-wrap
+					a.btn.btn_basket.btn_icon_before.card__btn(href= data.link)
+						+svg('bag', 'btn__icon')
+						| Заказать

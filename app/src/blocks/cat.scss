@@ -1,0 +1,151 @@
+$name: cat;
+
+.#{$name} {
+
+	&__head {
+		text-align: center;
+
+		@include screen-sm() {
+			margin-bottom: 1.5rem;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			justify-content: center;
+		}
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		width: 100%;
+
+		@include screen-lg() {
+			display: inline-block;
+			width: auto;
+			margin-right: 4rem;
+		}
+	}
+
+	&__links {
+		margin: 0 -15px;
+		display: block;
+
+		@include screen-sm() {
+			margin: 0 0 15px;
+			width: 100%;
+		}
+
+		@include screen-md() {
+			display: inline-block;
+			width: auto;
+			margin-right: auto;
+		}
+
+		@include screen-sm(max) {
+			text-align: left;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__link-item {
+		list-style-type: none;
+		display: inline-block;
+		width: 50%;
+		padding: 0 15px 30px;
+
+		@include screen-sm() {
+			width: auto;
+			padding: 0;
+			margin-right: 15px;
+		}
+	}
+
+	&__link {
+		display: block;
+		line-height: 1.3;
+
+		@include screen-sm(max) {
+			color: $color-text;
+			border-bottom: none;
+			font-size: 12px;
+		}
+
+		&:hover {
+
+			@include screen-sm(max) {
+				color: $color-link;
+			}
+		}
+
+		&_active {
+			@extend a:not([class]):hover;
+
+			@include screen-sm() {
+				cursor: default;
+				border-bottom-color: transparent;
+			}
+
+			&:hover {
+
+				@include screen-sm() {
+					border-bottom-color: transparent;
+				}
+			}
+		}
+	}
+
+	&__link-img-wrap {
+		display: block;
+		border: 1px solid $color-light;
+		border-radius: 4px;
+		overflow: hidden;
+		margin-bottom: 10px;
+
+		@include screen-sm() {
+			display: none;
+		}
+	}
+
+	&__link-img {
+		display: block;
+		padding-bottom: 100%;
+		background: no-repeat center / cover;
+		transition: $duration linear;
+
+		&:hover {
+			transform: scale(1.04) rotate(.5deg);
+		}
+	}
+
+	&__link-text {
+
+	}
+
+	&__all-link-wrap {
+		margin-bottom: 15px;
+
+		@include screen-md(max) {
+			width: 100%;
+		}
+
+		@include screen-sm(max) {
+			width: auto;
+			margin: 0 -15px -.8rem;
+			padding-top: 2.2rem;
+			border-top: 1px solid $color-light;
+			text-align: center;
+		}
+	}
+
+	&__all-link {
+		display: inline-block;
+		line-height: 1.3;
+	}
+
+	&__body {
+
+		@include screen-sm(max) {
+			display: none;
+		}
+	}
+}
