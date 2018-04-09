@@ -11,13 +11,13 @@ mixin card(data)
 			.card__state-wrap
 
 				if data.state.hit
-					.card__state.card__state_hit Хит
+					.dash.dash_hit.card__state Хит
 
 				if data.state.recommend
-					.card__state.card__state_recommend Рекомендуем
+					.dash.dash_recommend.card__state Рекомендуем
 
 				if data.state.discount
-					.card__state.card__state_discount Скидка
+					.dash.dash_discount.card__state Скидка
 
 		.card__bot
 			.card__title-wrap

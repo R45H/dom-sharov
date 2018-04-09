@@ -196,11 +196,7 @@ $name: tile;
 		}
 	}
 
-	// TODO: Сделать плашки блоками
 	&__sm-title {
-		@extend .card__state;
-		@extend .card__state_recommend;
 		margin: 0;
-		text-align: center;
 	}
 }

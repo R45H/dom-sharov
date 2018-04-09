@@ -1,0 +1,23 @@
+$name: dash;
+
+.#{$name} {
+	font-size: 13px;
+	color: white;
+	padding: 5px 15px;
+	line-height: 1;
+	border-radius: 4px;
+	background: $color-gray;
+	text-align: center;
+
+	&_hit {
+		background: $color-warning;
+	}
+
+	&_recommend {
+		background: $color-success;
+	}
+
+	&_discount {
+		background: $color-danger;
+	}
+}

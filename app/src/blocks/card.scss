@@ -51,25 +51,7 @@ $name: card;
 	}
 
 	&__state {
-		font-size: 13px;
-		color: white;
-		padding: .5rem 1.5rem;
-		line-height: 1;
 		margin-bottom: 10px;
-		border-radius: 4px;
-		background: $color-gray;
-
-		&_hit {
-			background: $color-warning;
-		}
-
-		&_recommend {
-			background: $color-success;
-		}
-
-		&_discount {
-			background: $color-danger;
-		}
 	}
 
 	&__bot {
