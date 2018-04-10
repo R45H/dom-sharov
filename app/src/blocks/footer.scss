@@ -56,12 +56,13 @@ $name: footer;
 
 	&__copyright {
 		font-size: 12px;
-		color: $color-gray;
+		color: $color-lightgray;
 		flex: none;
 		text-align: center;
 
 		@include screen-sm() {
 			margin-right: 15px;
+			color: $color-gray;
 		}
 	}
 }

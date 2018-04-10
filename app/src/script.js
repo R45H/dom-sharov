@@ -8,6 +8,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/up.js'
 	}());
+	(function() {
+		//=require 'blocks/menu/menu.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

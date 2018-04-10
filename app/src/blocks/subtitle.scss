@@ -10,3 +10,14 @@ $name: subtitle;
 		margin: 1.5em 0 1em;
 	}
 }
+
+a.#{$name} {
+	transition: $duration / 2 linear;
+	display: inline-block;
+
+	&:hover {
+		color: $color-link;
+		fill: $color-link;
+		transition: none;
+	}
+}

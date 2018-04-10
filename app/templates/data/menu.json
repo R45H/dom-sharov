@@ -1,7 +1,7 @@
 {
 	"menu": [
-		{"link": "#", "icon": "menu-1", "name": "Каталог"},
-		{"link": "#", "icon": "menu-2", "name": "Оформление шарами"},
+		{"link": "#", "icon": "menu-1", "name": "Каталог", "sub": true},
+		{"link": "#", "icon": "menu-2", "name": "Оформление шарами", "sub": true},
 		{"link": "#", "icon": "menu-3", "name": "Печать на шарах"},
 		{"link": "#", "name": "Доставка и оплата"},
 		{"link": "#", "name": "Instashop"},

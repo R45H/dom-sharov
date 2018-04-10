@@ -6,13 +6,11 @@
 
 // Блоки
 @import 'blocks/link-icon'; // Ссылка с иконкой
-@import 'blocks/menu'; // Меню
+@import 'blocks/subtitle'; // Подзаголовок
 @import 'blocks/input'; // Поле ввода
 @import 'blocks/search'; // Поле ввода для поиска
 @import 'blocks/pay'; // Иконки платёжных систем
 @import 'blocks/social'; // Социальные иконки
-@import 'blocks/subtitle'; // Подзаголовок
-@import 'blocks/f-menu'; // Меню в футере
 @import 'blocks/text'; // Блок контента
 @import 'blocks/partner'; // Логотипы партёров
 @import 'blocks/title'; // Заголовок
@@ -24,6 +22,9 @@
 @import 'blocks/tile'; // Блок с плитками
 @import 'blocks/dash'; // Цветная плашка
 @import 'blocks/slider/slider'; // Слайдер
+@import 'blocks/sm-offer'; // Маленький блок с предложением
+@import 'blocks/f-menu'; // Меню в футере
+@import 'blocks/menu/menu'; // Меню
 /* Blocks will be inserted here */
 // =====
 

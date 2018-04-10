@@ -1,4 +1,5 @@
 include ../mixins/svg
+include ../mixins/sm-offer
 
 // HEADER
 header.header
@@ -24,15 +25,47 @@ header.header
 			.row.header__bot-i
 
 				.header__bot-item.col-sm-8.col-lg-9
-					ul.menu
+					ul.menu.header__menu
 						each val in menu
 							li.menu__item(class= val.icon ? 'menu__item_icon' : '')
-								a.menu__link(href= val.link)
+								a.menu__link(
+									href= val.link
+									class= val.sub ? 'menu__link_angle' : ''
+								)
 
 									if (val.icon)
 										+svg(val.icon, 'menu__icon')
 
 									span.menu__text= val.name
+
+								if (val.sub)
+									.menu__sub-outer
+										.container
+											.row
+												.col-sm-6.col-md-8.col-lg-9
+													.row.menu__sub-wrap.menu__sub-wrap_line
+
+														- for (var i = 0; i < 2; i++) {
+
+															each val in [cat, cat_2, cat_3]
+																.col-md-6.col-lg-4.menu__sub-col
+																	.menu__sub-item
+																		.menu__sub-i
+																			a.subtitle.menu__sub-title(href='#')= val.title
+
+																	each sub in val.links
+																		.menu__sub-item
+																			.menu__sub-i
+																				a.menu__sub-link(href='#')= sub.text
+														- }
+
+												.col-sm-6.col-md-4.col-lg-3
+													.row.menu__sub-wrap
+
+														each val in offer
+															.col-12.menu__sub-col
+																+sm-offer(val)
+
 
 				.header__bot-item.col-sm-4.col-lg-3
 					.search

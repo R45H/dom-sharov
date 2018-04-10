@@ -3,17 +3,20 @@
 		{
 			"img": "img/content/offer/delivery.jpg",
 			"title": "Доставка за 3 часа",
-			"desc": "по Москве и Санкт-Петербургу"
+			"desc": "По Москве и Санкт-Петербургу",
+			"icon": "offer-1"
 		},
 		{
 			"img": "img/content/offer/quality.jpg",
 			"title": "Способность летать",
-			"desc": "до 3-х дней"
+			"desc": "До 3-х дней",
+			"icon": "offer-2"
 		},
 		{
 			"img": "img/content/offer/service.jpg",
 			"title": "Всегда на связи",
-			"desc": "круглосуточно без выходных",
+			"desc": "Круглосуточно без выходных",
+			"icon": "offer-3",
 			"is_mobile_hidden": true
 		}
 	]

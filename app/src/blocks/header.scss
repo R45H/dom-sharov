@@ -2,6 +2,7 @@ $name: header;
 
 .#{$name} {
 	flex: 0 0 auto;
+	z-index: 1;
 
 	&__top {
 		padding: 2.5rem 0;
@@ -19,7 +20,7 @@ $name: header;
 	}
 
 	&__bot {
-		padding: 15px 0;
+		position: relative;
 
 		@include screen-sm() {
 			border-top: 1px solid $color-light;
@@ -34,9 +35,15 @@ $name: header;
 	}
 
 	&__bot-item {
+		position: static;
 
 		@include screen-sm(max) {
 			margin-bottom: 15px;
 		}
+	}
+
+	&__menu {
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 }

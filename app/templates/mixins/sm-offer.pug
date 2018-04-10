@@ -1,0 +1,11 @@
+include svg
+
+mixin sm-offer(data)
+	.sm-offer
+
+		.sm-offer__icon-wrap
+			+svg(data.icon, 'sm-offer__icon')
+
+		.sm-offer__text-wrap
+			.sm-offer__title= data.title
+			.sm-offer__desc= data.desc

@@ -1,0 +1,28 @@
+$name: sm-offer;
+
+.#{$name} {
+	display: flex;
+	align-items: center;
+
+	&__icon-wrap {
+		margin-right: 15px;
+	}
+
+	&__icon {
+		width: 4.5rem;
+		height: 4.5rem;
+		fill: $color-lightgray;
+	}
+
+	&__text-wrap {
+		color: $color-gray;
+	}
+
+	&__title {
+		font-weight: bold;
+	}
+
+	&__desc {
+		font-size: 12px;
+	}
+}
