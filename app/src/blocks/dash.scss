@@ -8,6 +8,7 @@ $name: dash;
 	border-radius: 4px;
 	background: $color-gray;
 	text-align: center;
+	display: inline-block;
 
 	&_hit {
 		background: $color-warning;

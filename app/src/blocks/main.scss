@@ -20,4 +20,11 @@ $name: main;
 			}
 		}
 	}
+
+	&__slider {
+
+		@include screen-sm(max) {
+			margin: 0 -15px;
+		}
+	}
 }

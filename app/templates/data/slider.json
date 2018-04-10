@@ -1,0 +1,29 @@
+{
+	"slider": [
+		{
+			"title": "Шары на День рождения",
+			"img": "img/content/tile/01.jpg",
+			"price": 59
+		},
+		{
+			"title": "Печать на шарах",
+			"img": "img/content/tile/02.jpg",
+			"price": 59
+		},
+		{
+			"title": "Товары для праздника",
+			"img": "img/content/tile/03.jpg",
+			"price": 59
+		},
+		{
+			"title": "Цветы",
+			"img": "img/content/tile/04.jpg",
+			"price": 59
+		},
+		{
+			"title": "Торты",
+			"img": "img/content/tile/05.jpg",
+			"price": 59
+		}
+	]
+}

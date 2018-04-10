@@ -1,0 +1,12 @@
+include ../mixins/svg
+
+mixin slider(data)
+	.slider(class= attributes.class)
+		
+		each val in data
+			.slider__item(style='background-image: url(' + val.img + ');')
+				.slider__i
+					a.title.title_lg.slider__title(href='#')= val.title
+						+svg('arrow-right', 'title__icon')
+
+					.dash.dash_discount= 'от ' + val.price + ' руб.'

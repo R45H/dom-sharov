@@ -7,7 +7,31 @@ $name: title;
 	font-weight: bold;
 	line-height: 1.2;
 
+	&__icon {
+		width: 30px;
+		height: 20px;
+		vertical-align: middle;
+		margin-left: .4em;
+	}
+
 	&_space_bot {
 		margin: 0 0 1.5em;
+	}
+
+	&_lg {
+		font-weight: normal;
+		line-height: 1;
+		font-size: 3.5rem;
+	}
+}
+
+a.#{$name} {
+	transition: $duration / 2 linear;
+	display: inline-block;
+
+	&:hover {
+		color: $color-link;
+		fill: $color-link;
+		transition: none;
 	}
 }

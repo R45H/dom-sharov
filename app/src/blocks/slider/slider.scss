@@ -1,0 +1,98 @@
+$name: slider;
+
+.#{$name} {
+	border: 1px solid $color-lightgray;
+	border-radius: 4px;
+	overflow: hidden;
+
+	&__item {
+		padding-bottom: 55%;
+		position: relative;
+		background: no-repeat center / cover;
+		float: left;
+		width: 100%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(white, .25);
+		}
+	}
+
+	&__i {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 5rem 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__title {
+		margin-bottom: .75em;
+	}
+
+	&__dots {
+		position: absolute;
+		bottom: 0;
+		left: 10%;
+		width: 80%;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin-bottom: -4px;
+			padding: .5em .7em 1.5em;
+			cursor: pointer;
+
+			&:hover {
+
+				.#{$name} {
+					// =====
+
+					&__dot {
+						opacity: 1;
+						transition: none;
+					}
+				}
+			}
+
+			@include screen-md() {
+				padding-left: .5em;
+				padding-right: .5em;
+			}
+
+			&.slick-active {
+
+				.#{$name} {
+					// =====
+
+					&__dot {
+						opacity: 1;
+						transition: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__dot {
+		width: .8em;
+		height: .8em;
+		border-radius: 50%;
+		display: block;
+		background: $color-text;
+		opacity: .5;
+		transition: $duration linear;
+	}
+}

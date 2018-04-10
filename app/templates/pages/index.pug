@@ -1,9 +1,13 @@
 include ../mixins/offer
 include ../components/cat
+include ../components/slider
 
-.section
+.section.visible-xs
+	.container
+		+slider(slider)(class='main__slider')
+
+.section.hidden-xs
 	include ../components/tile
-
 
 .section.section_mobile_white.section_mobile_shrink.section_mobile_space-bot
 	.container
