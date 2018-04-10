@@ -1,5 +1,4 @@
 $(function() {
-
 	//=require 'global/global.js'
 
 	(function() {
@@ -10,6 +9,9 @@ $(function() {
 	}());
 	(function() {
 		//=require 'blocks/menu/menu.js'
+	}());
+	(function() {
+		//=require 'blocks/aside/aside.js'
 	}());
 	/* Blocks will be inserted here */
 });

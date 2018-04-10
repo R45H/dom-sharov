@@ -78,6 +78,16 @@ $name: btn;
 		}
 	}
 
+	&_fill-bordered {
+		border-color: $color-light;
+		background: darken($color-lighter, 2%);
+
+		&:hover {
+			background: lighten($color-link, 35%);
+			border-color: lighten($color-link, 31%);
+		}
+	}
+
 	&_wide {
 		width: 100%;
 	}

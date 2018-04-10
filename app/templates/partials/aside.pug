@@ -1,0 +1,26 @@
+include ../mixins/svg
+
+// ASIDE
+aside.aside
+
+	ul.aside__list
+
+		each val in menu
+			li.aside__item
+				a.aside__link(href= val.link)= val.name
+
+	.aside__wrap
+
+		.aside__btn-wrap
+			a.btn.btn_fill-bordered.btn_icon_before.aside__btn(href='#')
+				+svg('bag', 'btn__icon')
+				| Корзина
+
+		.aside__link-icon-wrap
+			.aside__link-icon-row
+				a.link-icon(href='tel:' + global[0].tel_link)
+					+svg('tel', 'link-icon__icon')
+					span.link-icon__text= global[0].tel
+
+		.aside__social-wrap
+			include ../components/social

@@ -29,12 +29,7 @@ footer.footer
 								span.link-icon__text= global[0].email
 
 					.footer__row
-						.social
-							.social__wrap
-								a.social__link(href='#' target='_blank' rel='nofollow')
-									+svg('social-whatsapp', 'social__icon')
-								a.social__link(href='#' target='_blank' rel='nofollow')
-									+svg('social-telegram', 'social__icon')
+						include ../components/social
 
 				.col-sm-8.col-lg-9
 					.row
