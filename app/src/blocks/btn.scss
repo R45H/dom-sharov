@@ -43,6 +43,14 @@ $name: btn;
 			width: 25px;
 			height: 20px;
 		}
+
+		&_arrow-thin {
+			left: auto;
+			right: 40px;
+			width: 7px;
+			height: 14px;
+			margin-top: -7px;
+		}
 	}
 
 	&_icon_before {
@@ -55,6 +63,10 @@ $name: btn;
 
 	&_icon_arrow {
 		padding-right: 75px;
+	}
+
+	&_icon_arrow-thin {
+		padding-right: 60px;
 	}
 
 	&_fill {
