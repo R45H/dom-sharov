@@ -35,18 +35,27 @@ $name: offer;
 
 	&__text-wrap {
 		padding: 2.5rem;
-		text-align: center;
 		flex: auto;
 		background: white;
+
+		@include screen-sm() {
+			text-align: center;
+		}
 	}
 
 	&__title {
-		font-size: 18px;
-		font-weight: bold;
 		margin-bottom: .5em;
+
+		@include screen-sm() {
+			font-size: 18px;
+		}
 	}
 
 	&__desc {
-		font-size: 13px;
+		font-size: 12px;
+
+		@include screen-sm() {
+			font-size: 13px;
+		}
 	}
 }

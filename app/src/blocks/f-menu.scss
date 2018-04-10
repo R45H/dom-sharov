@@ -5,7 +5,10 @@ $name: f-menu;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	width: 100%;
-	line-height: 1.8;
+
+	@include screen-sm() {
+		line-height: 1.8;
+	}
 
 	&__col {
 		padding: 0 15px;
@@ -39,6 +42,10 @@ $name: f-menu;
 		color: $color-text-gray;
 		display: block;
 		transition: $duration / 2 linear;
+
+		@include screen-sm(max) {
+			font-size: 12px;
+		}
 
 		&:hover {
 			color: $color-link;

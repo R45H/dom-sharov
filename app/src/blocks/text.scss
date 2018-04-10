@@ -5,6 +5,10 @@ $name: text;
 	p {
 		color: $color-text-gray;
 
+		@include screen-sm(max) {
+			font-size: 12px;
+		}
+
 		&:first-child {
 			margin-top: 0;
 		}
