@@ -1,0 +1,152 @@
+include ../components/slider
+include ../mixins/svg
+include ../mixins/card
+include ../mixins/offer
+include ../mixins/sm-offer
+include ../components/cat
+
+.section
+	.container
+
+		.row.main__separator
+			.col-3
+				h2.title .title
+			.col-3
+				a.title(href='#') a.title
+			.col-3
+				h2.title.title_lg .title.title_lg
+			.col-3
+				h2.title .title
+					+svg('arrow-right', 'title__icon')
+
+		.row.main__separator
+			.col-3
+				h2.subtitle .subtitle
+			.col-3
+				a.subtitle(href='#') a.subtitle
+			.col-3
+				h2.subtitle.subtitle_space .subtitle.subtitle_space
+
+		.row.main__space-col
+			.col-3
+				a.btn(href='#') .btn (link)
+			.col-3
+				button.btn .btn (button)
+			.col-3
+				input.btn(type='button' value='.btn (input)')
+			.col-3
+				a.btn.btn_fill(href='#') .btn.btn_fill
+
+		.row.main__space-col
+			.col-3
+				a.btn.btn_fill-bordered(href='#') .btn.btn_fill-bordered
+			.col-3
+				a.btn.btn_wide(href='#') .btn.btn_wide
+			.col-3
+				a.btn.btn_icon_before(href='#')
+					+svg('bag', 'btn__icon')
+					| .btn.btn_icon_before
+			.col-3
+				a.btn.btn_icon_after(href='#')
+					+svg('bag', 'btn__icon btn__icon_right')
+					| .btn.btn_icon_after
+
+		.row.main__separator
+			.col-3
+				a.btn.btn_icon_arrow(href='#')
+					| .btn.btn_icon_arrow
+					+svg('arrow-right', 'btn__icon btn__icon_arrow')
+			.col-4
+				a.btn.btn_icon_arrow-thin(href='#')
+					| .btn.btn_icon_arrow-thin
+					+svg('arrow-up', 'btn__icon btn__icon_arrow-thin')
+
+		.row.main__separator
+			.col-3
+				input.input(type='text' value='' placeholder='.input')
+			.col-3
+				input.input.input_invalid(type='text' value='' placeholder='.input.input_invalid')
+			.col-3
+				.search
+					input.input.search__input(type='text' placeholder='.search')
+					+svg('search', 'search__btn')
+
+		.row.main__separator
+			.col-3
+				a.link(href='#') .link
+			.col-3
+				a.link.link_icon_after(href='#')
+					| .link.link_icon_after
+					+svg('arrow-right', 'link__icon')
+
+		.row.main__separator
+			.col-3
+				a.link-icon(href='#')
+					+svg('tel', 'link-icon__icon')
+					span.link-icon__text .link-icon
+			.col-3
+				a.link-icon(href='#')
+					+svg('mail', 'link-icon__icon')
+					span.link-icon__text .link-icon
+			.col-3
+				a.link-icon.link-icon_big(href='#')
+					+svg('tel', 'link-icon__icon')
+					span.link-icon__text .link-icon.link-icon_big
+
+		.row.main__separator
+			.col-3
+				.dash .dash
+			.col-3
+				.dash.dash_recommend .dash.dash_recommend
+			.col-3
+				.dash.dash_hit .dash.dash_hit
+			.col-3
+				.dash.dash_discount .dash.dash_discount
+
+		.row.main__separator
+
+			each val, i in card
+
+				if i > 2
+					- break;
+
+				.col-3
+					+card(val)
+
+		.row.main__separator
+			.col-12
+				+cat(cat)
+
+		.row.main__separator
+			.col-3
+				+offer({
+					"img": "img/content/offer/delivery.jpg",
+					"title": ".offer",
+					"desc": "Description"
+				})
+
+		.row.main__separator
+			.col-12
+				.partner
+
+					each val in partner
+						.partner__item(style='background-image: url(' + val + ');')
+
+		.row.main__separator
+			.col-12
+				.pay
+
+					each val in pay
+						.pay__item(style='background-image: url(' + val + ');')
+
+		.row.main__separator
+			.col-12
+				include ../components/social
+
+		.row.main__separator
+			.col-6
+				+slider(slider)
+
+		.row
+			.col-12
+				include ../components/tile
