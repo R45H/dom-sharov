@@ -6,9 +6,9 @@ include ../mixins/svg
 			.tile__col
 				.tile__panel
 					.tile__panel-i.tile__panel-i_big
-						.tile__img(style='background-image: url(' + tile.big.img + ');')
 						a.title.title_lg(href='#')= tile.big.title
 							+svg('arrow-right', 'title__icon')
+						.tile__img(style='background-image: url(' + tile.big.img + ');')
 						ul.tile__list
 
 							each val in tile.big.links
