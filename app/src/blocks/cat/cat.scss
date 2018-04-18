@@ -147,4 +147,12 @@ $name: cat;
 			display: none;
 		}
 	}
+
+	&__body-i {
+		display: none;
+
+		&_visible {
+			display: block;
+		}
+	}
 }

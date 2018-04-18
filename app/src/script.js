@@ -13,6 +13,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/aside/aside.js'
 	}());
+	(function() {
+		//=require 'blocks/cat/cat.js'
+	}());
 	/* Blocks will be inserted here */
 });
 

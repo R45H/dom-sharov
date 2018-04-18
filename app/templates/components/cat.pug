@@ -10,7 +10,10 @@ mixin cat(data)
 
 				each val, i in data.links
 					li.cat__link-item
-						a.link.cat__link(href='#' class= !i ? 'cat__link_active' : '')
+						a.link.cat__link(
+							href='#' class= !i ? 'cat__link_active' : ''
+							data-link= 'target-' + (i + 1)
+						)
 							span.cat__link-img-wrap
 								span.cat__link-img(style='background-image: url(' + val.img + ');')
 							span.cat__link-text= val.text
@@ -21,13 +24,20 @@ mixin cat(data)
 					+svg('arrow-right', 'link__icon')
 
 		.cat__body
-			.row
 
-				each val in card
-					.col-sm-6.col-md-4.col-xl-3.main__space-col
-						+card(val)
+			- for (var i = 0; i < data.links.length; i++) {
+				.cat__body-i(
+					class= !i ? 'cat__body-i_visible' : ''
+					data-target= 'target-' + (i + 1)
+				)
+					.row
 
-			.text-center
-				a.btn.btn_fill.btn_icon_arrow.cat__more-btn(href='#')
-					| Смотреть ещё
-					+svg('arrow-right', 'btn__icon btn__icon_arrow')
+						each val in card
+							.col-sm-6.col-md-4.col-xl-3.main__space-col
+								+card(val)
+
+					.text-center
+						a.btn.btn_fill.btn_icon_arrow.cat__more-btn(href='#')
+							| Смотреть ещё
+							+svg('arrow-right', 'btn__icon btn__icon_arrow')
+			- }
