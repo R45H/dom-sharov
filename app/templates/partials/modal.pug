@@ -1,0 +1,18 @@
+include ../mixins/svg
+
+// MODAL
+#modal.modal
+	.modal__wrap
+
+		.modal__head
+			button.modal__close(data-modal-close)
+
+		.modal__body
+			+svg('menu-2', 'modal__icon')
+			h4.title.modal__title Товар добавлен в корзину
+
+			.row
+				.col-sm-6.modal__btn-wrap
+					a.btn.btn_wide(href='#') Перейти к оформлению
+				.col-sm-6.modal__btn-wrap
+					a.btn.btn_wide(href='#' data-modal-close) Продолжить просмотр

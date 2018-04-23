@@ -16,6 +16,9 @@ $(function() {
 	(function() {
 		//=require 'blocks/cat/cat.js'
 	}());
+	(function() {
+		//=require 'blocks/modal/modal.js'
+	}());
 	/* Blocks will be inserted here */
 });
 
