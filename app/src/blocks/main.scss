@@ -33,4 +33,12 @@ $name: main;
 		padding-bottom: 30px;
 		border-bottom: 1px solid $color-lightgray;
 	}
+
+	&__mt-1em {
+		margin-top: 1em;
+	}
+
+	&__mb-1em {
+		margin-bottom: 1em;
+	}
 }

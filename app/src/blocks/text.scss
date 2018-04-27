@@ -1,9 +1,9 @@
 $name: text;
 
 .#{$name} {
+	color: $color-text-gray;
 
 	p {
-		color: $color-text-gray;
 
 		@include screen-sm(max) {
 			font-size: 12px;
@@ -15,6 +15,67 @@ $name: text;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 1em 0;
+
+		@include screen-sm(max) {
+			font-size: 12px;
+		}
+
+		li {
+			position: relative;
+			padding-left: 3em;
+			margin: .5em 0;
+
+			&::before {
+				content: '';
+				width: .38461538em;
+				height: .38461538em;
+				position: absolute;
+				left: 1.30769231em;
+				top: .5em;
+				background: $color-success;
+				border-radius: 50%;
+			}
+		}
+
+		ul {
+			margin: .5em 0;
+		}
+	}
+
+	ol {
+		list-style-type: none;
+		counter-reset: list 0;
+		margin: 1em 0;
+
+		@include screen-sm(max) {
+			font-size: 12px;
+		}
+
+		li {
+			position: relative;
+			padding-left: 3em;
+			margin: .5em 0;
+
+			&::before {
+				width: 1em;
+				color: $color-success;
+				font-weight: bold;
+				counter-increment: list;
+				content: counter(list) '. ';
+				user-select: none;
+				position: absolute;
+				left: 1em;
+			}
+		}
+
+		ol {
+			margin: .5em 0;
 		}
 	}
 }
